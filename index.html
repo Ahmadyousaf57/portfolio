@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ahmad Yousaf   Developer</title>
+<title>Ahmad Yousaf — DevOps & Cloud Engineer</title>
+
 <link rel="icon" type="image/png" href="./favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -362,7 +363,6 @@
   .info-val { font-size: 14px; font-weight: 500; color: var(--text); }
 
   /* SKILLS */
-
   .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -420,9 +420,9 @@
   }
 
   .skill-tag.learning {
-    border-color: rgba(34,197,94,0.2);
-    color: var(--green);
-    background: rgba(34,197,94,0.05);
+    border-color: rgba(45,212,191,0.2);
+    color: var(--teal);
+    background: rgba(45,212,191,0.05);
   }
 
   /* EXPERIENCE */
@@ -503,6 +503,12 @@
     border: 1px solid rgba(45,212,191,0.2);
   }
 
+  .badge-freelance {
+    background: rgba(34,197,94,0.1);
+    color: var(--green);
+    border: 1px solid rgba(34,197,94,0.2);
+  }
+
   .timeline-role {
     font-family: var(--font-display);
     font-size: 18px;
@@ -542,8 +548,6 @@
   }
 
   /* PROJECTS */
-
-  /* NeoPay ecosystem banner */
   .neopay-banner {
     background: linear-gradient(135deg, rgba(108,99,255,0.08) 0%, rgba(45,212,191,0.05) 100%);
     border: 1px solid rgba(108,99,255,0.25);
@@ -584,6 +588,15 @@
     border-color: var(--accent);
     transform: translateY(-4px);
     box-shadow: 0 12px 40px rgba(108,99,255,0.12);
+  }
+
+  .project-card.featured-card {
+    background: linear-gradient(135deg, var(--bg2) 0%, rgba(108,99,255,0.06) 100%);
+    border-color: rgba(108,99,255,0.22);
+  }
+  .project-card.featured-card:hover {
+    border-color: var(--accent2);
+    box-shadow: 0 12px 40px rgba(108,99,255,0.18);
   }
 
   .project-card.neopay-card {
@@ -718,6 +731,11 @@
     box-shadow: 0 6px 24px rgba(108,99,255,0.07);
   }
 
+  .cert-card.featured-cert {
+    border-color: rgba(108,99,255,0.3);
+    background: linear-gradient(135deg, var(--bg3) 0%, rgba(108,99,255,0.06) 100%);
+  }
+
   .cert-org {
     font-size: 10px;
     font-weight: 600;
@@ -736,9 +754,109 @@
   }
 
   .cert-date { font-size: 11px; color: var(--muted); }
+  .cert-id { font-size: 10px; color: var(--muted); margin-top: 4px; font-family: monospace; }
+
+  /* PUBLICATIONS */
+  #publications { background: var(--bg); }
+
+  .pub-grid {
+    display: grid;
+    gap: 16px;
+  }
+
+  .pub-card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .pub-card:hover {
+    border-color: rgba(108,99,255,0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(108,99,255,0.08);
+  }
+
+  .pub-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .pub-badge {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 99px;
+    background: rgba(108,99,255,0.12);
+    color: var(--accent2);
+    border: 1px solid rgba(108,99,255,0.2);
+    letter-spacing: 0.3px;
+  }
+
+  .pub-date {
+    font-size: 11px;
+    color: var(--muted);
+    font-weight: 500;
+  }
+
+  .pub-title {
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.4;
+  }
+
+  .pub-journal {
+    font-size: 12px;
+    color: var(--accent2);
+    font-style: italic;
+  }
+
+  .pub-abstract {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.65;
+  }
+
+  .pub-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--accent2);
+    text-decoration: none;
+    border: 1px solid rgba(108,99,255,0.2);
+    padding: 5px 14px;
+    border-radius: 6px;
+    width: fit-content;
+    transition: background 0.2s, border-color 0.2s;
+  }
+
+  .pub-link:hover {
+    background: var(--accent-glow);
+    border-color: var(--accent);
+  }
+
+  .pub-authors {
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .pub-authors strong {
+    color: var(--text);
+    font-weight: 500;
+  }
 
   /* CONTACT */
-
   .contact-inner {
     background: linear-gradient(135deg, var(--bg2) 0%, rgba(108,99,255,0.05) 100%);
     border: 1px solid rgba(108,99,255,0.15);
@@ -771,7 +889,7 @@
     color: var(--muted);
     font-size: 15px;
     margin-bottom: 2rem;
-    max-width: 400px;
+    max-width: 460px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -839,6 +957,7 @@
     <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#certifications">Certs</a></li>
+    <li><a href="#publications">Research</a></li>
     <li><a href="#contact" class="nav-cta">Contact</a></li>
   </ul>
 </nav>
@@ -849,15 +968,15 @@
   <div class="container">
     <div class="hero-inner">
       <div>
-        <div class="hero-tag">Seeking DevOps Internship</div>
+        <div class="hero-tag">Open to DevOps · Cloud Roles</div>
         <h1 class="hero-name">
           Ahmad<br><span class="highlight">Yousaf</span>
         </h1>
         <p class="hero-role">
-          <strong>Aspiring Cloud DevOps Engineer</strong> · AWS Cloud Practitioner · ERP & Full-Stack Background
+          <strong>DevOps &amp; Cloud</strong> · AWS · Kubernetes · Terraform · CI/CD · Odoo Developer · Full-Stack
         </p>
         <p class="hero-desc">
-          CS Student at Superior University Lahore. Focused on becoming a <strong style="color: var(--accent2)">Cloud DevOps Engineer</strong>   currently studying AWS, Docker, Linux, and CI/CD. Backed by real internship experience in ERP and web development.
+          Final-year CS student at Superior University Lahore. I build infrastructure as code, ship CI/CD pipelines with security built in, and develop full-stack products. Recently completed Cyberwing's DevOps with AWS program and a 5-month Odoo internship at a Bahrain-based Odoo Partner.
         </p>
         <div class="hero-btns">
           <a href="#projects" class="btn-primary">View Projects →</a>
@@ -866,7 +985,7 @@
         </div>
         <div class="hero-stats">
           <div class="stat-item">
-            <div class="stat-num">6+</div>
+            <div class="stat-num">8+</div>
             <div class="stat-label">Projects Built</div>
           </div>
           <div class="stat-item">
@@ -874,12 +993,12 @@
             <div class="stat-label">Internships</div>
           </div>
           <div class="stat-item">
-            <div class="stat-num">10+</div>
-            <div class="stat-label">Certifications</div>
+            <div class="stat-num">2</div>
+            <div class="stat-label">Journal Papers</div>
           </div>
           <div class="stat-item">
-            <div class="stat-num">7th</div>
-            <div class="stat-label">Semester</div>
+            <div class="stat-num">3.4</div>
+            <div class="stat-label">CGPA</div>
           </div>
         </div>
       </div>
@@ -893,22 +1012,22 @@
   <div class="container">
     <div class="fade-up">
       <div class="section-eyebrow">About Me</div>
-      <h2 class="section-title">Passionate Builder,<br>Curious Learner</h2>
+      <h2 class="section-title">Platform-First Builder,<br>Infrastructure-Minded Engineer</h2>
       <div class="divider"></div>
     </div>
     <div class="about-grid fade-up">
       <div class="about-text">
         <p>
-          I'm <strong>Muhammad Ahmad Yousaf</strong>, a Computer Science student at Superior University Lahore in my 7th semester with a CGPA of 3.4. My primary focus right now is <strong>Cloud & DevOps</strong>   learning AWS, Docker, Linux, CI/CD pipelines, and infrastructure tooling with a clear goal of landing a <strong>DevOps internship</strong>.
+          I'm <strong>Muhammad Ahmad Yousaf</strong>, a final-year BS Computer Science student at Superior University Lahore (CGPA 3.4, graduating 2027). My focus is <strong>DevOps and Cloud</strong> — building the infrastructure and pipelines around software, not just the software itself.
         </p>
         <p>
-          I completed my internship at <strong>WCG Technology Solutions (Bahrain)</strong> as an Odoo Technical Intern, working on ERP customization using Python and Linux server deployment   real international, hands-on experience.
+          I recently completed <strong>Cyberwing's DevOps with AWS program</strong> (Oct–Nov 2026) and built production-grade projects: an AWS EKS platform with Terraform, GitHub Actions, SonarQube quality gate, GitHub OIDC (no stored keys), NetworkPolicies and Prometheus/Grafana — the full environment comes up in under 20 minutes.
         </p>
         <p>
-          Previously interned at <strong>Devsinn Software House</strong> as a Frontend Developer. That web dev background helps me understand the full software lifecycle   from code to deployment   which makes DevOps a natural fit.
+          Professionally, I completed an <strong>Odoo Technical Internship at WCG Technology Solutions (Bahrain)</strong>, an official Odoo Partner, where I built custom Python modules across Odoo 17, 18 and 19 on Linux servers. Previously interned at <strong>Devsinn Software House</strong> as a Frontend Developer.
         </p>
         <p>
-          Long-term goal: become a strong <strong>AWS Cloud DevOps Engineer</strong>, starting with the AWS Cloud Practitioner certification and building up from there.
+          I'm also a <strong>co-author of two 2026 journal papers</strong> on ML for IoT anomaly detection and explainable AI for cybersecurity on edge networks. My final year project is predictive autoscaling for Kubernetes using ARIMA and LSTM forecasting.
         </p>
       </div>
       <div class="about-cards">
@@ -916,7 +1035,7 @@
           <div class="info-icon">🎓</div>
           <div>
             <div class="info-label">Education</div>
-            <div class="info-val">BSCS   Superior University Lahore</div>
+            <div class="info-val">BSCS · Superior University Lahore · 2023–2027</div>
           </div>
         </div>
         <div class="info-card">
@@ -930,14 +1049,14 @@
           <div class="info-icon">💼</div>
           <div>
             <div class="info-label">Latest Experience</div>
-            <div class="info-val">Odoo Intern @ WCG, Bahrain</div>
+            <div class="info-val">Odoo Technical Intern · WCG Technology Solutions, Bahrain</div>
           </div>
         </div>
         <div class="info-card">
           <div class="info-icon">🎯</div>
           <div>
-            <div class="info-label">Current Goal</div>
-            <div class="info-val">AWS Cloud Practitioner → Cloud DevOps Engineer</div>
+            <div class="info-label">Final Year Project</div>
+            <div class="info-val">Predictive Autoscaling for Kubernetes (ARIMA + LSTM)</div>
           </div>
         </div>
         <div class="info-card">
@@ -945,6 +1064,17 @@
           <div>
             <div class="info-label">Email</div>
             <div class="info-val">hafizahmad1247@gmail.com</div>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">🔬</div>
+          <div>
+            <div class="info-label">Research Profiles</div>
+            <div class="info-val" style="display:flex;gap:12px;flex-wrap:wrap;">
+              <a href="https://www.researchgate.net/profile/Muhammad-Yousaf-175" target="_blank" style="color:var(--accent2);text-decoration:none;font-size:13px;">ResearchGate ↗</a>
+              <a href="https://orcid.org/0009-0000-9719-5630" target="_blank" style="color:var(--accent2);text-decoration:none;font-size:13px;">ORCID ↗</a>
+              <a href="https://scholar.google.com/citations?hl=en&user=6dAPqsMAAAAJ" target="_blank" style="color:var(--accent2);text-decoration:none;font-size:13px;">Google Scholar ↗</a>
+            </div>
           </div>
         </div>
       </div>
@@ -962,44 +1092,72 @@
     </div>
     <div class="skills-grid fade-up">
       <div class="skill-category">
-        <div class="skill-cat-title"><span class="skill-cat-icon">☁️</span> Cloud & DevOps   Primary Focus</div>
+        <div class="skill-cat-title"><span class="skill-cat-icon">☁️</span> Cloud & DevOps</div>
         <div class="skill-tags">
-          <span class="skill-tag">Git & GitHub</span>
+          <span class="skill-tag">AWS (EC2, VPC, EKS, ECR, RDS, IAM, S3, CloudWatch)</span>
+          <span class="skill-tag">Microsoft Azure</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Docker Compose</span>
+          <span class="skill-tag">Kubernetes</span>
+          <span class="skill-tag">Helm</span>
+          <span class="skill-tag">Terraform</span>
+          <span class="skill-tag">Jenkins</span>
+          <span class="skill-tag">GitHub Actions</span>
+          <span class="skill-tag">Prometheus</span>
+          <span class="skill-tag">Grafana</span>
           <span class="skill-tag">Linux</span>
-          <span class="skill-tag learning">AWS ☁️ Learning</span>
-          <span class="skill-tag learning">Docker 🐳 Learning</span>
-          <span class="skill-tag learning">CI/CD Learning</span>
-          <span class="skill-tag learning">GitHub Actions Learning</span>
-          <span class="skill-tag learning">Terraform Learning</span>
+          <span class="skill-tag">Bash</span>
+          <span class="skill-tag learning">Ansible ↗ Learning</span>
         </div>
       </div>
       <div class="skill-category">
-        <div class="skill-cat-title"><span class="skill-cat-icon">🎨</span> Frontend</div>
+        <div class="skill-cat-title"><span class="skill-cat-icon">🔒</span> Security Practices</div>
         <div class="skill-tags">
-          <span class="skill-tag">HTML5</span>
-          <span class="skill-tag">CSS3</span>
-          <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">React</span>
-          <span class="skill-tag">Bootstrap</span>
-          <span class="skill-tag">Tailwind CSS</span>
+          <span class="skill-tag">SonarQube Cloud</span>
+          <span class="skill-tag">GitHub OIDC (keyless AWS)</span>
+          <span class="skill-tag">Kubernetes NetworkPolicy</span>
+          <span class="skill-tag">Least-privilege IAM</span>
+          <span class="skill-tag">AWS Secrets Manager</span>
+          <span class="skill-tag">Security Groups / NSGs</span>
+          <span class="skill-tag">JWT</span>
+          <span class="skill-tag">bcrypt</span>
+          <span class="skill-tag">Non-root containers</span>
         </div>
       </div>
       <div class="skill-category">
-        <div class="skill-cat-title"><span class="skill-cat-icon">⚙️</span> Backend & ERP</div>
+        <div class="skill-cat-title"><span class="skill-cat-icon">⚙️</span> Backend, ERP & AI</div>
         <div class="skill-tags">
           <span class="skill-tag">Python</span>
-          <span class="skill-tag">PHP</span>
+          <span class="skill-tag">Node.js / Express</span>
+          <span class="skill-tag">Flask</span>
           <span class="skill-tag">FastAPI</span>
-          <span class="skill-tag">Odoo</span>
-          <span class="skill-tag">ERP Systems</span>
+          <span class="skill-tag">PHP</span>
+          <span class="skill-tag">Odoo 17/18/19</span>
+          <span class="skill-tag">ERP Customization</span>
+          <span class="skill-tag">OpenCV</span>
+          <span class="skill-tag">MediaPipe</span>
+          <span class="skill-tag">TripoSR</span>
         </div>
       </div>
       <div class="skill-category">
-        <div class="skill-cat-title"><span class="skill-cat-icon">🗄️</span> Database</div>
+        <div class="skill-cat-title"><span class="skill-cat-icon">🎨</span> Frontend & Mobile</div>
         <div class="skill-tags">
-          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Next.js</span>
+          <span class="skill-tag">React Native (Expo)</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">Tailwind CSS</span>
+          <span class="skill-tag">Bootstrap</span>
+          <span class="skill-tag">JavaScript</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="skill-cat-title"><span class="skill-cat-icon">🗄️</span> Databases</div>
+        <div class="skill-tags">
           <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">MySQL</span>
           <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">Drizzle ORM</span>
           <span class="skill-tag">SQL</span>
         </div>
       </div>
@@ -1021,15 +1179,15 @@
         <div class="timeline-meta">
           <span class="timeline-date">Jan 2026 – May 2026</span>
           <span class="timeline-badge badge-intern">Internship</span>
-          <span class="timeline-badge badge-intl">🌍 International</span>
+          <span class="timeline-badge badge-intl">🌍 International · Bahrain</span>
         </div>
         <div class="timeline-role">Odoo Technical Intern</div>
-        <div class="timeline-company">WCG Technology Solutions W.L.L   Manama, Bahrain</div>
+        <div class="timeline-company">WCG Technology Solutions W.L.L. — Official Odoo Partner, Manama, Bahrain</div>
         <ul class="timeline-points">
-          <li>Developed and customized Odoo modules using Python for ERP workflows</li>
-          <li>Worked on ERP implementation, debugging, and feature development</li>
-          <li>Installed and configured Odoo on Linux servers</li>
-          <li>Gained hands-on exposure to international work culture and enterprise systems</li>
+          <li>Built custom Python modules for Odoo from client requirements</li>
+          <li>Worked across Odoo 17, 18 and 19: ERP customization, debugging and feature implementation</li>
+          <li>Installed, configured and ran Odoo on Linux servers</li>
+          <li>Took part in training sessions and client project work; internship completion letter issued by the Director (6 May 2026)</li>
         </ul>
       </div>
 
@@ -1039,25 +1197,36 @@
           <span class="timeline-badge badge-intern">Internship</span>
         </div>
         <div class="timeline-role">Frontend Developer Intern</div>
-        <div class="timeline-company">Devsinn Technologies   Lahore, Pakistan</div>
+        <div class="timeline-company">Devsinn Software House — Lahore, Pakistan</div>
         <ul class="timeline-points">
-          <li>Built responsive and user-friendly website interfaces using HTML, CSS, JavaScript</li>
-          <li>Collaborated with the design and development team to build modern UI components</li>
-          <li>Applied Bootstrap and React JS to improve user experience and performance</li>
-          <li>Participated in code reviews, testing, and debugging processes</li>
+          <li>Built responsive interfaces with HTML, CSS, JavaScript, Bootstrap and React</li>
+          <li>Worked with the design and development team on UI components</li>
+          <li>Took part in code reviews, testing and debugging</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <span class="timeline-date">Ongoing</span>
+          <span class="timeline-badge badge-freelance">Freelance</span>
+        </div>
+        <div class="timeline-role">Freelance Full-Stack Developer</div>
+        <div class="timeline-company">Self-employed — Remote</div>
+        <ul class="timeline-points">
+          <li>Gleetex: MERN luxury e-commerce store with admin dashboard and role-based access control, built for a client</li>
+          <li>NeoPay Pro: FinTech wallet web app with OTP email verification, JWT auth and PostgreSQL</li>
         </ul>
       </div>
 
       <div class="timeline-item">
         <div class="timeline-meta">
           <span class="timeline-date">Nov 2022 – Sep 2025</span>
-          <span class="timeline-badge badge-intern">Freelance</span>
+          <span class="timeline-badge badge-freelance">Freelance</span>
         </div>
         <div class="timeline-role">Social Media Manager</div>
-        <div class="timeline-company">Self-Managed   Remote</div>
+        <div class="timeline-company">Self-employed — Remote</div>
         <ul class="timeline-points">
-          <li>Managed social media presence and content strategy for clients</li>
-          <li>2 years 11 months of consistent freelance work</li>
+          <li>Managed social media presence and content strategy for clients over nearly 3 years</li>
         </ul>
       </div>
 
@@ -1073,30 +1242,86 @@
       <h2 class="section-title">Things I've Built</h2>
       <div class="divider"></div>
     </div>
-    <!-- Featured Project: Gleetex -->
-    <div class="fade-up" style="margin-bottom: 24px;">
-      <div class="project-card neopay-card">
+
+    <!-- Featured DevOps: Skill-to-Job Matcher -->
+    <div class="fade-up" style="margin-bottom: 16px;">
+      <div class="project-card featured-card">
         <div class="project-header">
-          <div class="project-icon">💎</div>
+          <div class="project-icon">🚀</div>
           <div class="project-links">
-            <span class="live-badge">LIVE</span>
-            <a href="https://gleetex.vercel.app/" target="_blank" class="project-link" title="Live Demo">🔗</a>
-            <a href="https://github.com/Ahmadyousaf57/Ahmadyousaf57.git" target="_blank" class="project-link" title="GitHub">⌨️</a>
+            <a href="https://github.com/Ahmadyousaf57/skill-job-matcher" target="_blank" class="project-link" title="GitHub">⌨️</a>
           </div>
         </div>
-        <div class="project-name">Gleetex   Luxury E-Commerce</div>
+        <div class="project-name">Skill-to-Job Matcher — CI/CD &amp; Infrastructure on AWS EKS</div>
         <div class="project-desc">
-          Full-stack luxury e-commerce website built for a client. Features JWT user auth, product catalog with reviews, order management system, and a complete admin dashboard with analytics.
+          Full DevSecOps pipeline on AWS. Terraform provisions VPC, EKS, private RDS PostgreSQL and ECR (remote state in S3). GitHub Actions pipeline: tests → SonarQube Cloud quality gate → image build → ECR (commit-SHA tags) → Helm deploy → smoke test. Security: GitHub OIDC role (no stored AWS keys), default-deny NetworkPolicies verified with test pods, RDS password in Secrets Manager, non-root containers, branch protection. Prometheus/Grafana with a custom alert. Full environment up in under 20 minutes, destroyed after each session to control cost.
         </div>
         <div class="project-stack">
-          <span class="stack-tag">React</span>
-          <span class="stack-tag">Vite</span>
-          <span class="stack-tag">Tailwind CSS</span>
-          <span class="stack-tag">Zustand</span>
+          <span class="stack-tag">Terraform</span>
+          <span class="stack-tag">AWS EKS</span>
+          <span class="stack-tag">GitHub Actions</span>
+          <span class="stack-tag">SonarQube</span>
+          <span class="stack-tag">Helm</span>
+          <span class="stack-tag">GitHub OIDC</span>
+          <span class="stack-tag">Kubernetes NetworkPolicy</span>
+          <span class="stack-tag">Prometheus</span>
+          <span class="stack-tag">Grafana</span>
+          <span class="stack-tag">AWS Secrets Manager</span>
+          <span class="stack-tag">ECR · RDS · VPC</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- prod-stack -->
+    <div class="fade-up" style="margin-bottom: 16px;">
+      <div class="project-card featured-card">
+        <div class="project-header">
+          <div class="project-icon">⚙️</div>
+          <div class="project-links">
+            <a href="https://github.com/Ahmadyousaf57/prod-stack" target="_blank" class="project-link" title="GitHub">⌨️</a>
+          </div>
+        </div>
+        <div class="project-name">prod-stack — One App, Three Deployment Targets</div>
+        <div class="project-desc">
+          Same 4-service stack (Nginx, Flask, PostgreSQL) deployed three ways: Docker Compose, Kubernetes (plain manifests + Helm chart, StatefulSet, NetworkPolicies) and AWS EC2 (Terraform). Jenkins pipelines for Kubernetes (image to Docker Hub, Helm upgrade) and AWS (SSH deploy). CloudWatch alarm, SNS alerts, Prometheus/Grafana monitoring. Extended into the <strong style="color:var(--text)">Resource Booking Portal</strong> (3-person group project): Flask API with double-booking conflict detection.
+        </div>
+        <div class="project-stack">
+          <span class="stack-tag">Docker Compose</span>
+          <span class="stack-tag">Kubernetes</span>
+          <span class="stack-tag">Helm</span>
+          <span class="stack-tag">Terraform</span>
+          <span class="stack-tag">Jenkins</span>
+          <span class="stack-tag">AWS EC2</span>
+          <span class="stack-tag">CloudWatch</span>
+          <span class="stack-tag">Prometheus</span>
+          <span class="stack-tag">Grafana</span>
+          <span class="stack-tag">Flask</span>
+          <span class="stack-tag">PostgreSQL</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Azure 3-Tier -->
+    <div class="fade-up" style="margin-bottom: 24px;">
+      <div class="project-card featured-card">
+        <div class="project-header">
+          <div class="project-icon">🔷</div>
+          <div class="project-links">
+            <a href="https://github.com/Ahmadyousaf57/azure-3tier-app" target="_blank" class="project-link" title="GitHub">⌨️</a>
+          </div>
+        </div>
+        <div class="project-name">3-Tier Web App on Azure (Azure CLI)</div>
+        <div class="project-desc">
+          Nginx → Node.js/Express (PM2) → MySQL Flexible Server in separate subnets with NSG rules per tier. No public IP on the backend or database tier. SSH key-only access. Fully scripted with the Azure CLI.
+        </div>
+        <div class="project-stack">
+          <span class="stack-tag">Microsoft Azure</span>
+          <span class="stack-tag">Azure CLI</span>
+          <span class="stack-tag">VNet / NSG</span>
+          <span class="stack-tag">Nginx</span>
           <span class="stack-tag">Node.js</span>
-          <span class="stack-tag">Express.js</span>
-          <span class="stack-tag">MongoDB</span>
-          <span class="stack-tag">JWT</span>
+          <span class="stack-tag">PM2</span>
+          <span class="stack-tag">MySQL Flexible Server</span>
         </div>
       </div>
     </div>
@@ -1106,41 +1331,33 @@
       <div class="neopay-banner">
         <span class="neopay-banner-icon">💳</span>
         <div class="neopay-banner-text">
-          <strong>NeoPay Fintech Ecosystem</strong>   A full-stack digital wallet platform built as two products: a React Native mobile app and a Next.js web dashboard, sharing the same Node.js + PostgreSQL backend.
+          <strong>NeoPay Fintech Ecosystem</strong> — A full-stack digital wallet platform built as two products: a React Native mobile app and a web dashboard, sharing the same Node.js + PostgreSQL backend.
         </div>
       </div>
       <div class="neopay-pair">
-
-        <!-- NeoPay Mobile App -->
         <div class="project-card neopay-card">
           <div class="project-header">
             <div class="project-icon">📱</div>
             <div class="project-links">
               <span class="live-badge">LIVE</span>
               <a href="https://expo.dev/accounts/ahmad_devs/projects/neopay/builds/4dac05dd-f65a-443a-b7ee-bc6cd97b63d2" target="_blank" class="project-link" title="Expo Build">📲</a>
-              <a href="https://github.com/Ahmadyousaf57/NEOPAY" target="_blank" class="project-link" title="GitHub">⌨️</a>
+              <a href="https://github.com/Ahmadyousaf57/NeoPay-App" target="_blank" class="project-link" title="GitHub">⌨️</a>
             </div>
           </div>
-          <div class="project-name">NeoPay   Mobile Wallet App</div>
+          <div class="project-name">NeoPay — Mobile Wallet App</div>
           <div class="project-desc">
-            Full-stack fintech mobile wallet built with React Native (Expo). Features biometric login (Fingerprint/Face ID), Visa &amp; Mastercard lock/unlock, money transfers with notes, bill payments (electricity, gas, water, internet, mobile), real-time transaction history with filters, spending analytics, dark/light theme and currency selector.
+            Full-stack fintech mobile wallet. Features biometric login (Fingerprint/Face ID), Visa &amp; Mastercard lock/unlock, money transfers, bill payments, real-time transaction history, spending analytics, dark/light theme. Android build with EAS.
           </div>
           <div class="project-stack">
             <span class="stack-tag">React Native</span>
             <span class="stack-tag">Expo</span>
             <span class="stack-tag">TypeScript</span>
-            <span class="stack-tag">TanStack Query</span>
-            <span class="stack-tag">Expo Router</span>
             <span class="stack-tag">Node.js</span>
-            <span class="stack-tag">Express.js</span>
             <span class="stack-tag">PostgreSQL</span>
             <span class="stack-tag">Drizzle ORM</span>
             <span class="stack-tag">JWT + Biometric</span>
-            <span class="stack-tag">Railway + Expo EAS</span>
           </div>
         </div>
-
-        <!-- NeoPay Web Dashboard -->
         <div class="project-card neopay-card">
           <div class="project-header">
             <div class="project-icon">🌐</div>
@@ -1150,26 +1367,50 @@
               <a href="https://github.com/Ahmadyousaf57/NEOPAY" target="_blank" class="project-link" title="GitHub">⌨️</a>
             </div>
           </div>
-          <div class="project-name">NeoPay   Web Dashboard</div>
+          <div class="project-name">NeoPay — Web Dashboard</div>
           <div class="project-desc">
-            Modern fintech web dashboard   the web version of NeoPay. Built with Next.js 14 and TypeScript. Features a responsive UI, real-time wallet &amp; transaction dashboard, card management interface, bill payment and money transfer screens, and dark/light theme support. Deployed on Vercel.
+            Web version of NeoPay. Vanilla JS + Node.js/Express + PostgreSQL, OTP email verification (Resend), JWT, bcrypt. Deployed on Vercel.
           </div>
           <div class="project-stack">
-            <span class="stack-tag">Next.js 14</span>
-            <span class="stack-tag">TypeScript</span>
-            <span class="stack-tag">Tailwind CSS</span>
-            <span class="stack-tag">React Three Fiber</span>
+            <span class="stack-tag">Vanilla JS</span>
+            <span class="stack-tag">Node.js</span>
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">JWT</span>
+            <span class="stack-tag">Resend OTP</span>
             <span class="stack-tag">Vercel</span>
           </div>
         </div>
-
       </div>
     </div>
 
-    <!-- Other Projects -->
+    <!-- Other Projects Grid -->
     <div class="projects-grid fade-up">
 
-      <!-- AI 3D Scanner -->
+      <!-- Gleetex -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">💎</div>
+          <div class="project-links">
+            <span class="live-badge">LIVE</span>
+            <a href="https://gleetex.vercel.app/" target="_blank" class="project-link" title="Live Demo">🔗</a>
+            <a href="https://github.com/Ahmadyousaf57/Gleetex" target="_blank" class="project-link" title="GitHub">⌨️</a>
+          </div>
+        </div>
+        <div class="project-name">Gleetex — Luxury E-Commerce</div>
+        <div class="project-desc">
+          MERN luxury e-commerce store built for a client. JWT auth, role-based admin dashboard (products, orders, users), Zustand state management.
+        </div>
+        <div class="project-stack">
+          <span class="stack-tag">React</span>
+          <span class="stack-tag">Node.js</span>
+          <span class="stack-tag">MongoDB</span>
+          <span class="stack-tag">Zustand</span>
+          <span class="stack-tag">Tailwind CSS</span>
+          <span class="stack-tag">JWT</span>
+        </div>
+      </div>
+
+      <!-- Roomify AR -->
       <div class="project-card">
         <div class="project-header">
           <div class="project-icon">🤖</div>
@@ -1177,59 +1418,37 @@
             <a href="https://github.com/Ahmadyousaf57/3d-scanner-v2" target="_blank" class="project-link" title="GitHub">⌨️</a>
           </div>
         </div>
-        <div class="project-name">AI 3D Scanner   TripoSR</div>
+        <div class="project-name">Roomify AR — AI 3D Scanner</div>
         <div class="project-desc">
-          Upload a photo → local AI generates a 3D model → view and download as GLB. Powered by TripoSR by Stability AI. 100% free, no API key, runs entirely on your machine.
+          One photo → 3D model (.glb) locally with TripoSR (no paid API, no cloud). Next.js + React Three Fiber viewer, FastAPI backend, separate AR placement app.
         </div>
         <div class="project-stack">
-          <span class="stack-tag">Next.js 14</span>
+          <span class="stack-tag">Next.js</span>
           <span class="stack-tag">FastAPI</span>
-          <span class="stack-tag">Python</span>
-          <span class="stack-tag">TripoSR AI</span>
+          <span class="stack-tag">TripoSR</span>
           <span class="stack-tag">React Three Fiber</span>
           <span class="stack-tag">TypeScript</span>
         </div>
       </div>
 
-      <!-- Virtual Try-On -->
+      <!-- Crowd Zero -->
       <div class="project-card">
         <div class="project-header">
           <div class="project-icon">🛍️</div>
           <div class="project-links">
-            <a href="https://github.com/Ahmadyousaf57/virtual-try-on-5th-sem" target="_blank" class="project-link" title="GitHub">⌨️</a>
+            <a href="https://github.com/Ahmadyousaf57/virtual-try-on" target="_blank" class="project-link" title="GitHub">⌨️</a>
           </div>
         </div>
-        <div class="project-name">Virtual Try-On E-Commerce</div>
+        <div class="project-name">Crowd Zero — AR Virtual Try-On</div>
         <div class="project-desc">
-          E-commerce platform where users can virtually try on clothes before buying. Combines Digital Image Processing with full-stack web development. Includes an admin panel for product management.
+          PHP/MySQL storefront and admin panel. FastAPI + OpenCV + MediaPipe service overlays sunglasses and hats on an uploaded photo using face landmarks.
         </div>
         <div class="project-stack">
           <span class="stack-tag">PHP</span>
           <span class="stack-tag">MySQL</span>
-          <span class="stack-tag">Bootstrap</span>
+          <span class="stack-tag">FastAPI</span>
           <span class="stack-tag">OpenCV</span>
-          <span class="stack-tag">Image Processing</span>
-        </div>
-      </div>
-
-      <!-- E-Commerce Python -->
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-icon">🛒</div>
-          <div class="project-links">
-            <a href="https://github.com/Ahmadyousaf57/ecommerce-website-python-eel-4th-sem" target="_blank" class="project-link" title="GitHub">⌨️</a>
-          </div>
-        </div>
-        <div class="project-name">Clothes E-Commerce + AI Chatbot</div>
-        <div class="project-desc">
-          Full-stack e-commerce platform with an integrated AI chatbot. User/admin sides, product management, search, and dynamic categories. Backend built with Python EEL library.
-        </div>
-        <div class="project-stack">
-          <span class="stack-tag">Python</span>
-          <span class="stack-tag">EEL Library</span>
-          <span class="stack-tag">MySQL</span>
-          <span class="stack-tag">JavaScript</span>
-          <span class="stack-tag">AI Chatbot</span>
+          <span class="stack-tag">MediaPipe</span>
         </div>
       </div>
 
@@ -1246,10 +1465,22 @@
       <div class="divider"></div>
     </div>
     <div class="certs-grid fade-up">
+      <div class="cert-card featured-cert">
+        <div class="cert-org">Cyberwing Solutions</div>
+        <div class="cert-name">DevOps with AWS — 4-Month Program</div>
+        <div class="cert-date">Oct 2026</div>
+        <div class="cert-id">ID: CWP-26-D110-032</div>
+      </div>
+      <div class="cert-card featured-cert">
+        <div class="cert-org">Cyberwing Solutions</div>
+        <div class="cert-name">DevOps Labs Completion — Practical Assessment</div>
+        <div class="cert-date">Nov 2026</div>
+        <div class="cert-id">CI/CD · Containers · Automation · Cloud Deployment</div>
+      </div>
       <div class="cert-card">
-        <div class="cert-org">IBM</div>
-        <div class="cert-name">Introduction to Software Engineering</div>
-        <div class="cert-date">May 2025</div>
+        <div class="cert-org">DeepLearning.AI</div>
+        <div class="cert-name">Deep Learning Specialization</div>
+        <div class="cert-date">2025</div>
       </div>
       <div class="cert-card">
         <div class="cert-org">University of Michigan</div>
@@ -1257,9 +1488,9 @@
         <div class="cert-date">Apr 2025</div>
       </div>
       <div class="cert-card">
-        <div class="cert-org">DeepLearning.AI</div>
-        <div class="cert-name">Deep Learning Specialization</div>
-        <div class="cert-date">2025</div>
+        <div class="cert-org">IBM</div>
+        <div class="cert-name">Introduction to Software Engineering</div>
+        <div class="cert-date">May 2025</div>
       </div>
       <div class="cert-card">
         <div class="cert-org">SoloLearn</div>
@@ -1272,20 +1503,62 @@
         <div class="cert-date">2025</div>
       </div>
       <div class="cert-card">
-        <div class="cert-org">Superior University   IEEE</div>
-        <div class="cert-name">Agentic AI for Productivity & Network Security Workshop</div>
+        <div class="cert-org">Superior University · IEEE</div>
+        <div class="cert-name">Agentic AI for Productivity &amp; Network Security</div>
         <div class="cert-date">2025</div>
       </div>
       <div class="cert-card">
-        <div class="cert-org">Superior University   IEEE</div>
-        <div class="cert-name">Generative AI: Present Capabilities & Future Directions</div>
+        <div class="cert-org">Superior University · IEEE</div>
+        <div class="cert-name">Generative AI: Present Capabilities &amp; Future Directions</div>
         <div class="cert-date">2024</div>
       </div>
-      <div class="cert-card">
-        <div class="cert-org">Superior University</div>
-        <div class="cert-name">Intra-University Programming Competition</div>
-        <div class="cert-date">2024</div>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications" class="section-pad">
+  <div class="container">
+    <div class="fade-up">
+      <div class="section-eyebrow">Research</div>
+      <h2 class="section-title">Published Work</h2>
+      <div class="divider"></div>
+      <p class="section-sub">Co-author on two peer-reviewed papers published in 2026. Profiles:
+        <a href="https://www.researchgate.net/profile/Muhammad-Yousaf-175" target="_blank" style="color:var(--accent2);text-decoration:none;">ResearchGate</a> ·
+        <a href="https://orcid.org/0009-0000-9719-5630" target="_blank" style="color:var(--accent2);text-decoration:none;">ORCID</a> ·
+        <a href="https://scholar.google.com/citations?hl=en&user=6dAPqsMAAAAJ" target="_blank" style="color:var(--accent2);text-decoration:none;">Google Scholar</a>
+      </p>
+    </div>
+    <div class="pub-grid fade-up">
+
+      <div class="pub-card">
+        <div class="pub-meta">
+          <span class="pub-badge">IoT · ML · Anomaly Detection</span>
+          <span class="pub-date">28 Mar 2026</span>
+        </div>
+        <div class="pub-title">An Efficient Machine Learning and Deep Learning-Enabled Anomaly Detection and Recovery in Academic &amp; Industrial Applications Based on IoT and IIoTs</div>
+        <div class="pub-journal">Annual Methodological Archive Research Review · Vol. 4, No. 3, pp. 1567–1616</div>
+        <div class="pub-abstract">
+          A two-stage framework that detects anomalies in industrial and academic sensor data, then reconstructs affected records. Validated on the AI4I 2020 predictive-maintenance dataset.
+        </div>
+        <div class="pub-authors">M. Yousaf, N. Ayub, S. K. H. Shah, C. U. Mehmood, <strong>M. A. Yousaf</strong>, H. Khan, M. Z. Hussain, H. A. Mehdi, M. M. Abdullah</div>
+        <a href="https://doi.org/10.5281/zenodo.23761567" target="_blank" class="pub-link">DOI: 10.5281/zenodo.23761567 ↗</a>
       </div>
+
+      <div class="pub-card">
+        <div class="pub-meta">
+          <span class="pub-badge">Cybersecurity · XAI · Edge Computing</span>
+          <span class="pub-date">23 Feb 2026</span>
+        </div>
+        <div class="pub-title">Designing Trustworthy Explainable Machine Learning Framework for Cyber Security Threat Analytics for Real-Time Threat Detection in Edge Computing</div>
+        <div class="pub-journal">Annual Methodological Archive Research Review · Vol. 4, No. 2, pp. 297–337</div>
+        <div class="pub-abstract">
+          An explainable ML framework for intrusion detection on edge networks, combining Random Forest and XGBoost with SHAP and LIME explanations on the CICIDS2017 dataset.
+        </div>
+        <div class="pub-authors">I. Aslam, N. Ayub, C. U. Mehmood, H. Khan, H. M. S. Khan, <strong>M. A. Yousaf</strong>, H. A. Mehdi, M. W. Khawar, M. M. Abdullah</div>
+        <a href="https://doi.org/10.5281/zenodo.23943314" target="_blank" class="pub-link">DOI: 10.5281/zenodo.23943314 ↗</a>
+      </div>
+
     </div>
   </div>
 </section>
@@ -1297,12 +1570,15 @@
       <div class="section-eyebrow" style="text-align:center;">Get In Touch</div>
       <h2 class="contact-title">Let's Work Together</h2>
       <p class="contact-sub">
-        Actively seeking a <strong>DevOps Internship</strong>. Open to Cloud, AWS, and DevOps roles   also available for web development and Odoo/ERP work.
+        Open to <strong>DevOps</strong> and <strong>Cloud</strong> internships and junior roles — also available for Odoo/ERP and full-stack work.
       </p>
       <div class="contact-links">
         <a href="mailto:hafizahmad1247@gmail.com" class="btn-primary">✉️ Send Email</a>
         <a href="https://linkedin.com/in/ahmad-yousaf-2042aa284" target="_blank" class="btn-secondary">LinkedIn ↗</a>
         <a href="https://github.com/Ahmadyousaf57" target="_blank" class="btn-secondary">GitHub ↗</a>
+        <a href="https://www.researchgate.net/profile/Muhammad-Yousaf-175" target="_blank" class="btn-secondary">ResearchGate ↗</a>
+        <a href="https://orcid.org/0009-0000-9719-5630" target="_blank" class="btn-secondary">ORCID ↗</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=6dAPqsMAAAAJ" target="_blank" class="btn-secondary">Scholar ↗</a>
       </div>
     </div>
   </div>
@@ -1310,7 +1586,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <p>Designed & built by <span>Ahmad Yousaf</span> · Lahore, Pakistan · 2026</p>
+  <p>Designed &amp; built by <span>Ahmad Yousaf</span> · Lahore, Pakistan · 2026</p>
 </footer>
 
 <script>
@@ -1322,7 +1598,7 @@
   }, { threshold: 0.1 });
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-  // Fix all internal anchor links - smooth scroll without page reload
+  // Smooth scroll for internal anchor links
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', function(e) {
       const href = this.getAttribute('href');
@@ -1356,7 +1632,7 @@
     link.setAttribute('rel', 'noopener noreferrer');
   });
 
-  // Email button fix
+  // Email button
   document.querySelectorAll('a[href^="mailto"]').forEach(link => {
     link.addEventListener('click', function(e) {
       e.stopPropagation();
